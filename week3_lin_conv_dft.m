@@ -20,19 +20,19 @@ n1 = 0:l1-1;
 n2 = 0:l2-1;
 n3 = 0:(length(y)-1);
 
-subplot(3,1,1)
+subplot(3,1,3)
 stem(n3,y);
 xlabel("Time");
 ylabel("Amplitude");
 title("Inverse DFT spectrum");
 
-subplot(3,1,2);
+subplot(3,1,1);
 stem(n1,x);
 xlabel("Time");
 ylabel("Amplitude");
 title("First input sequence spectrum");
 
-subplot(3,1,3);
+subplot(3,1,2);
 stem(n2,h);
 xlabel("Time");
 ylabel("Amplitude");
