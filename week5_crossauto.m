@@ -28,7 +28,7 @@ L = l1 + l2 - 1;
 
 %% Hermitian property
 
-r = xcorr(x,y);
+r = xcorr(x,y); % xcorr is an in-built function for correlation
 r1 = xcorr(y,x);
 if (r == fliplr(r1))
     disp('Hermitian property is satisfied.');
@@ -36,7 +36,8 @@ else
     disp('Hermitian property is not satisfied.');
 end
 
-%% Covolution of the two sequences using in-built function]]
+%% Covolution of the two sequences using in-built function
+
 lc = conv(x,y);
 R = int8(r); % To convert the data type
 disp(R);
