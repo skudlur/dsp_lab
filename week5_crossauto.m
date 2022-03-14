@@ -36,12 +36,10 @@ else
     disp('Hermitian property is not satisfied.');
 end
 
-%% Covolution of the two sequences using in-built function
+%% Convolution of the two sequences using in-built function
 
 lc = conv(x,y);
 R = int8(r); % To convert the data type
-disp(R);
-disp(lc);
 if (R == lc)
     disp('Second sequence is symmetric.');
 else
