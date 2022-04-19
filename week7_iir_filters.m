@@ -27,4 +27,3 @@ grid on;
 xlabel('Frequency in Hz');
 ylabel('Magnitude in dB');
 title('Magnitude Response');
-sgtitle('Suhas KV | PES2UG20EC093');
